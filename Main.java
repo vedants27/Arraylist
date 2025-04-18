@@ -29,6 +29,12 @@ class Main {
                  ArrayList<Integer> arrayList = functions.arrayToArrayList(array);
                 System.out.println("Converted ArrayList: " + arrayList);
                    }
+                case 4 -> {
+                ArrayList<Integer> arrayList = arrayInput.getUserArrayList();
+                int[] array = functions.arrayListToArray(arrayList);
+                System.out.println("Converted Array: " + Arrays.toString(array));
+                  }
+
 
 
 
