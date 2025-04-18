@@ -24,6 +24,12 @@ class Main {
                int index = functions.findSmallestDistanceIndex(array);
                 System.out.println("Index of the first number in the closest pair: " + index);
                   }
+                case 3 -> {
+                int[] array = arrayInput.getUserArray();
+                 ArrayList<Integer> arrayList = functions.arrayToArrayList(array);
+                System.out.println("Converted ArrayList: " + arrayList);
+                   }
+
 
 
             }
