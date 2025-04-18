@@ -19,6 +19,12 @@ class Main {
                 int[] array = arrayInput.getUserArray();
                 functions.separateOddEven(array);
                   }
+                case 2 -> {
+               int[] array = arrayInput.getUserArray();
+               int index = functions.findSmallestDistanceIndex(array);
+                System.out.println("Index of the first number in the closest pair: " + index);
+                  }
+
 
             }
         }
