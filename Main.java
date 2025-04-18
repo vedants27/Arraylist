@@ -15,7 +15,11 @@ class Main {
             int choice = scanner.nextInt();
             
             switch (choice) {
-                // Cases added in later commits
+                case 1 -> {
+                int[] array = arrayInput.getUserArray();
+                functions.separateOddEven(array);
+                  }
+
             }
         }
     }
