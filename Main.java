@@ -34,10 +34,14 @@ class Main {
                 int[] array = functions.arrayListToArray(arrayList);
                 System.out.println("Converted Array: " + Arrays.toString(array));
                   }
-
-
-
-
+                case 0 -> {
+                System.out.println("Exiting program.");
+                scanner.close();
+                return;
+                      }
+                default -> {
+               System.out.println("Invalid choice, please try again.");
+                   }
             }
         }
     }
