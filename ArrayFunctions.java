@@ -21,6 +21,25 @@ class ArrayFunctions {
     System.out.print("Odd ");
     display(odd);
 }
+    // Find the index of the first number in a pair with the smallest distance
+    	int findSmallestDistanceIndex(int[] array) {
+        	if (array.length < 2) {
+            	throw new IllegalArgumentException("Array must have at least two elements.");
+        	}
+
+        	int minIndex = 0;
+        	int minDistance = Math.abs(array[1] - array[0]);
+
+        	for (int i = 1; i < array.length - 1; i++) {
+            		int distance = Math.abs(array[i + 1] - array[i]);
+            		if (distance < minDistance) {
+                		minDistance = distance;
+                		minIndex = i;
+            		}
+        	}
+
+        	return minIndex;
+    	}
 
 }
 
